@@ -1,0 +1,360 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.show {
+    display:block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(233, 144, 0);
+    position: sticky;
+}
+
+button {
+    background-color: #b2b719;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#welcome {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    /* transform: translate( -2%, -50%); */
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Playwrite CU";
+    font-size: 45px;
+}
+#headings {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    /* transform: translate(-50%, -20%); */
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+#heading {
+    margin: 0;
+    font-family: "suse";
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+#nameOfRestaurant {
+    font-size: 90px;
+    font-family: 'Protest Guerrilla', 'sans-sherif';
+    margin: 0;
+    color: white
+}
+
+#paragraph {
+    text-align: center;
+    max-width: 800px;
+    font-size: 20px;
+    color: rgb(244, 248, 249);
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+#backImage {
+    /* background-image: url("henry-perks-TStCoAiFjDY-unsplash.jpg"); */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    filter: blur(4px);
+}
+
+#contentAfter {
+    background: linear-gradient(to right, rgb(231, 44, 44), rgb(231, 231, 119));
+}
+
+#contentAfter2 {
+    max-width: 80vw;
+    margin: 0 auto;
+
+}
+
+.cont1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.iamgeOfBox {
+    max-width: 350px;
+    height: 250px;
+    margin: 10px;
+
+}
+
+.box {
+    border: 2px solid black;
+    background-color: #ebddddba;
+    font-size: 30px;
+    padding: 30px;
+    max-width: 700px;
+    font-family: Playwrite Cuba, cursive;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#destination {
+    display: block;
+    margin: 30px auto;
+    border: 1px solid black;
+    font-size: 60px;
+    padding: 70px;
+    max-width: 700px !important;
+    font-family: Playwrite Cuba, cursive;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    background-image: url('./images/burger.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(208, 255, 0);
+    background-size: cover;
+
+}
+
+/*  Menu css from here  */
+#menuName {
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#menuImage {
+    height: 270px;
+    margin: 0 auto;
+    display: block;
+}
+
+#menuList {
+    border: 1px solid black;
+    max-width: 830px;
+    margin: 0 auto;
+    background-color: #f1a7fe;
+}
+
+#menuList ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#menuList ul li {
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 7px;
+    margin: 7px;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.menuItems {
+    display: grid;
+    grid-template-areas: 'header header header header header'
+        'item item price image image';
+    gap: 10px;
+    padding: 15px;
+    background-color: #c3fffa;
+    margin: 20px auto;
+    max-width: 800px;
+
+}
+
+.gridHeading {
+    grid-area: header;
+    font-family: 'Matemasie', 'cursive';
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dots {
+    text-decoration: none;
+}
+
+.gridItems {
+    font-size: 20px;
+    font-family: "suse", 'sans sherif';
+    grid-area: item;
+    background-color: rgb(255, 228, 225, 0.8);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.gridPrice {
+    grid-area: price;
+    font-size: 20px;
+    font-family: "suse", 'sans sherif';
+    background-color: rgb(255, 228, 225, 0.8);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gridImage {
+    grid-area: image;
+    min-height: 100px;
+    max-height: 200px;
+    width: 170px;
+    margin: 0 auto;
+
+}
+
+/*  CSS for Contact  */
+
+#contactChild {
+    display: flex;
+    justify-content: center;
+}
+
+#orderNow {
+    background-color: #e95713;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 auto;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    /* width: 500px; */
+    
+}
+
+input,
+textarea {
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 5px;
+    border-style: groove;
+    background-color: #3CBC8D;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgba(9, 8, 8, 0.2);
+}
+
+input:focus {
+    border: 3px solid #555;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    margin: 5px;
+    font-size: 17px;
+    font-family: "suse", "sans sherif";
+    display: block;
+ 
+}
+
+#submit {
+    width: 100px;
+    padding: 7px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+#verticalLine {
+    border: none;
+    border-left: 5px solid black;
+    margin: 30px;
+    height: 700px;
+}
+
+#ourContact p {
+    font-size: 17px;
+    font-family: 'suse';
+
+}
+
+.innerFlex {
+    display: flex;
+
+    align-items: last baseline;
+}
+
+.innerImage {
+    height: 50px;
+    width: 50px;
+}
+
+.innerDetails {
+    font-size: 14px;
+    font-family: 'suse';
+    padding: 5px;
+    margin: 5px;
+    max-width: 200px;
+}
